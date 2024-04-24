@@ -66,6 +66,7 @@
 
     <script>
         const apiKey = "{{ env('API_KEY_ESRI') }}";
+        const API_KEY_NGROK = "{{ env('API_KEY_NGROK') }}";
         const map = L.map('map').setView([{{ env('MAP_CENTER_LATITUDE') }}, {{ env('MAP_CENTER_LONGITUDE') }}], 13);
 
         // openstreetmap
@@ -109,8 +110,17 @@
 
         $.ajax({
             url: "{{ route('api.places') }}",
+            // url: `https://api.ngrok.com/${API_KEY_NGROK}`,
             type: 'GET',
             dataType: 'json',
+            xhrFields: {
+                withCredentials: true
+            },
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                xhr.setRequestHeader('Authorization', `Bearer ${API_KEY_NGROK}`);
+                xhr.setRequestHeader('Ngrok-Version', '2');
+            },
             success: function (data) {
                 var marker = L.geoJSON(data, {
                     pointToLayer: function(geoJsonPoint, latlng) {
