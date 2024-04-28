@@ -27,7 +27,7 @@ class PlaceSeeder extends Seeder
         ]);
         Place::create([
             'pasal' => '363 KUHP',
-            'waktu' => 'Pada hari Selasa Tanggal 21 Februari 2023 Sekira Jam 20.00 WIB',
+            'waktu' => 'Pada hari Selasa Tanggal 21 Februari 2023 Sekitar Jam 20.00 WIB',
             'address' => ' Kp. Seglog Rt/Rw. 001/005 Desa Sukamanah Kec.Rajeg Kab.Tangerang',
             'description' => 'Tindak Pidana Pencurian dengan Pemberatan Sepeda Motor Merk Honda No Pol AB-4635-YJ,tahun 2017, Warna Biru Putih, Nomor Rangka MH1JM211HK488851, Nomor Mesin JM21E1485327, An. SUMINEM',
             'image' => null,
@@ -37,7 +37,7 @@ class PlaceSeeder extends Seeder
         ]);
         Place::create([
             'pasal' => '363 KUHP',
-            'waktu' => 'Pada hari Selasa Tanggal 21 Februari 2023 Sekira Jam 20.00 WIB',
+            'waktu' => 'Pada hari Selasa Tanggal 21 Februari 2023 Sekitar Jam 20.00 WIB',
             'address' => 'Jl.Raya Rajeg Tanjakan no.49 DS.Tanjakan Kec.Rajeg Kab.Tangerang',
             'description' => 'Pencurian dengan Pemberatan 1 (satu) unit sepeda motor Honda Scoopy, warna merah th. 2022, Nopol A 4853 UD, Noka : MH1JM0213NK623827, Nosin : JM02E1623939, An. WAHYUNI',
             'image' => null,
@@ -47,7 +47,7 @@ class PlaceSeeder extends Seeder
         ]);
         Place::create([
             'pasal' => '363 KUHP',
-            'waktu' => 'Hari Sabtu, Tanggal 08 April 2023 Sekira01.30 WIB',
+            'waktu' => 'Hari Sabtu, Tanggal 08 April 2023 Sekitar 01.30 WIB',
             'address' => 'Jl. Melati Perum Taman RayaRajeg Blok G Rt. 18/05, Ds. Mekar Sari, Kec. Rajeg, Kab.Tangerang',
             'description' => 'Pencurian dengan Kekerasan berupa 1 ( satu ) buah HP ( HandPhone ) merk. VIVO , Type 1814, warna Biru,.',
             'image' => null,
@@ -57,7 +57,7 @@ class PlaceSeeder extends Seeder
         ]);
         Place::create([
             'pasal' => '170 KUHP',
-            'waktu' => 'Hari SeninTanggal 24 April 2023 Sekira 02.30 WIB',
+            'waktu' => 'Hari Senin, Tanggal 24 April 2023 Sekitar 02.30 WIB',
             'address' => 'Perum Rajeg Asri Rt.12/02, Ds.Rajeg, , Kec.Rajeg, Kab.Tangerang',
             'description' => 'Peristiwa Pencurian dengan Pemberatan Sepeda Motor',
             'image' => null,

@@ -122,16 +122,23 @@
                 xhr.setRequestHeader('Ngrok-Version', '2');
             },
             success: function (data) {
+                console.log('data',data);
                 var marker = L.geoJSON(data, {
                     pointToLayer: function(geoJsonPoint, latlng) {
                         return L.marker(latlng).bindPopup(function (layer) {
-                            return layer.feature.properties.map_popup_content;
+                            return layer.feature.properties.place_name + '<br/>' +
+                            'Pasal: ' + layer.feature.properties.pasal + '<br/>' +
+                            'Waktu: ' + layer.feature.properties.waktu + '<br/>' +
+                            'Latitude: ' + layer.feature.geometry.coordinates[1] + '<br/>' +
+                            'Longitude: ' + layer.feature.geometry.coordinates[0] + '<br/>' +
+                            'Alamat: ' + layer.feature.properties.address;
                         });
                     }
                 });
                 markers.addLayer(marker);
                 map.addLayer(markers);
             },
+
             error: function(data) {
                 console.log(data);
             }
