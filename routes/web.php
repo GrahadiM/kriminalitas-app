@@ -23,7 +23,7 @@ Route::controller(App\Http\Controllers\FrontendController::class)->name('fronten
 Auth::routes([
     'login'    => true,
     'logout'   => true,
-    'register' => true,
+    'register' => false,
     'reset'    => false,
     'confirm'  => false,
     'verify'   => false,

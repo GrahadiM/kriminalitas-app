@@ -15,11 +15,16 @@
 @endsection
 
 @section('content')
+
+    <div class="text-center justify-content-center mb-2">
+        <img src="{{ asset('/assets/images/logo_polri.png') }}" alt="logo polri" style="height:80px;">
+    </div>
+
     <h2 class="text-center text-capitalize fw-bold mb-4">PETA KRIMINALITAS</h2>
 
     <div id="map" class="mt-5"></div>
 
-    <div class="list-group list-group-horizontal-sm mt-5" style="overflow-x: auto; white-space: nowrap;">
+    {{-- <div class="list-group list-group-horizontal-sm mt-5" style="overflow-x: auto; white-space: nowrap;">
         @foreach ([
             [
                 'image' => 'banner_1.png',
@@ -46,7 +51,7 @@
                 <img src="{{ asset('assets/images/client/' . $banner['image']) }}" height="60" alt="client">
             </a>
         @endforeach
-    </div>
+    </div> --}}
 
 @endsection
 
