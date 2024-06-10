@@ -25,6 +25,7 @@ class PlaceSeeder extends Seeder
             'latitude' => '-6.1066716004536925',
             'longitude' => '106.5358187152665',
         ]);
+
         Place::create([
             'pasal' => '363 KUHP',
             'waktu' => 'Pada hari Selasa Tanggal 21 Februari 2023 Sekitar Jam 20.00 WIB',
@@ -35,6 +36,7 @@ class PlaceSeeder extends Seeder
             'latitude' => '-6.117225955478658',
             'longitude' => '106.51827797649074',
         ]);
+
         Place::create([
             'pasal' => '363 KUHP',
             'waktu' => 'Pada hari Selasa Tanggal 21 Februari 2023 Sekitar Jam 20.00 WIB',
@@ -45,6 +47,7 @@ class PlaceSeeder extends Seeder
             'latitude' => '-6.0924043973461925',
             'longitude' => '106.5186831388329',
         ]);
+
         Place::create([
             'pasal' => '363 KUHP',
             'waktu' => 'Hari Sabtu, Tanggal 08 April 2023 Sekitar 01.30 WIB',
@@ -55,6 +58,7 @@ class PlaceSeeder extends Seeder
             'latitude' => '-6.122589141030944',
             'longitude' => '106.5345204429125',
         ]);
+
         Place::create([
             'pasal' => '170 KUHP',
             'waktu' => 'Hari Senin, Tanggal 24 April 2023 Sekitar 02.30 WIB',

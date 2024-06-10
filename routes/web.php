@@ -39,3 +39,7 @@ Route::controller(App\Http\Controllers\AdminController::class)->name('admin.')->
     Route::put('/update/{id}', 'update')->name('update');
     Route::delete('/destroy/{id}', 'destroy')->name('destroy');
 });
+
+Route::controller(App\Http\Controllers\PimpinanController::class)->name('pimpinan.')->group(function() {
+    Route::get('/riwayat', 'riwayat')->name('riwayat');
+});

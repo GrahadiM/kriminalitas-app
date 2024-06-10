@@ -17,6 +17,7 @@ class AdminController extends Controller
         $data['data'] = Place::all();
         return view('admin.list', $data);
     }
+
     public function create()
     {
         return view('admin.create');

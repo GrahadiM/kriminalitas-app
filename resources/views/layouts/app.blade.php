@@ -45,6 +45,11 @@
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('list')) ? 'active' : '' }}" href="{{ route('admin.list') }}">Daftar Kriminal</a>
                         </li>
+                        @if (auth()->user()->hasRole('pimpinan'))
+                            <li class="nav-item">
+                                <a class="nav-link {{ (request()->is('riwayat')) ? 'active' : '' }}" href="{{ route('pimpinan.riwayat') }}">Riwayat</a>
+                            </li>
+                        @endif
                     </ul>
                     @if (Route::has('login'))
                         <div class="d-flex">

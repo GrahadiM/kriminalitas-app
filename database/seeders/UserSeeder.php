@@ -29,5 +29,17 @@ class UserSeeder extends Seeder
         $permissionsAdmin = Permission::pluck('id','id')->all();
         $roleAdmin->syncPermissions($permissionsAdmin);
         $admin->assignRole([$roleAdmin->id]);
+
+        $pimpinan = User::create([
+            'name'              => 'Kapolsek',
+            'email'             => 'pimpinan@test.com',
+            'password'          => bcrypt('password'),
+            'email_verified_at' => now(),
+            'remember_token'    => Str::random(10),
+        ]);
+        $rolePimpinan = Role::create(['name' => 'pimpinan']);
+        $permissionsPimpinan = Permission::pluck('id','id')->all();
+        $rolePimpinan->syncPermissions($permissionsPimpinan);
+        $pimpinan->assignRole([$rolePimpinan->id]);
     }
 }
